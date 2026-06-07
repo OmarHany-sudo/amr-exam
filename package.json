@@ -1,0 +1,36 @@
+{
+  "name": "exam",
+  "version": "1.0.0",
+  "description": "منصة مراجعة موثقة لمادة الحاسوب والإذاعة من ملفات PDF محلية.",
+  "private": true,
+  "scripts": {
+    "generate:content": "node scripts/generate-content.mjs",
+    "predev": "node scripts/generate-content.mjs",
+    "dev": "next dev",
+    "prebuild": "node scripts/generate-content.mjs",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.3.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.40.0",
+    "fuse.js": "^7.4.2",
+    "lucide-react": "^1.17.0",
+    "next": "^15.5.19",
+    "pdf-parse": "^2.4.5",
+    "pdfjs-dist": "^5.4.296",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "tailwindcss": "^4.3.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^5.9.3"
+  }
+}
